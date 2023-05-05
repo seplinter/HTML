@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Input your username : </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">entre your password :</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">enter a color :</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">enter a number :</label>
+            <input id="number" type="number" placeholder="number" name="number" min="1" max="1000">
+        </p>
+        <button>Submit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <label for="googlesearch">Search in google</label>
+        <input type="text" name="q" id="googlesearch">
+        <button>Search</button>
+    </form>
+    <h2>More inputs !</h2>
+    <form action="/birds">
+        <input type="checkbox" name="h1" id="h1">
+        <label for="h1">H1</label>
+        <button>Submit</button>
+        <p>
+            <label for="r1">Radio 1</label>
+            <input type="radio" name="ra" id="r1" value="r1">
+            <label for="r2">Radio 2</label>
+            <input type="radio" name="ra" id="r2" value="r2">
+            <label for="r3">Radio 3</label>
+            <input type="radio" name="ra" id="r3" value="r3">
+        </p>
+        <button>Submit</button>
+
+    </form>
+    <br>
+    <form action="/select">
+        <label for="selectoption">Please select a pet :</label>
+        <select name="pets" id="selectoption">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="mouse">Mouse</option>
+            <option value="hamster">Hamster</option>
+        </select>
+        <p>
+            <label for="chess">amount of chess :</label>
+            <input type="range" id="chess" min="1" max="10" step="1" name="chesslevel">
+        </p>
+        <p>
+            <label for="textarea">Text area</label><br>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <form action="/dummy">
+        <label for="first">First name</label>
+        <input type="text" id="first" name="first" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="6" maxlength="20" required>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
